@@ -4,13 +4,18 @@ using UnityEngine;
 
 public class DoorTrigger : MonoBehaviour
 {
-
     [SerializeField] GameObject door;
 
     bool isOpened = false;
 
+    void Start()
+    {
+
+    }
+
     void OnTriggerEnter(Collider Player)
     {
+        
         if (Player.tag == "Player")
         {
 
