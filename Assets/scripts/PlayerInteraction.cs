@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerInteraction : MonoBehaviour
 {
     PlayerControls controls;
-
-    [SerializeField] Text LevelCompleteText;
 
 
     void Awake()
@@ -20,7 +19,7 @@ public class PlayerInteraction : MonoBehaviour
 
     void Start()
     {
-        LevelCompleteText.gameObject.SetActive(false);
+
     }
 
     void Update() {
@@ -46,14 +45,14 @@ public class PlayerInteraction : MonoBehaviour
                 stoveInteraction.Interact();
 
                 LevelComplete();
-                Time.timeScale = 0f;
+                
             }
         }
     }
 
     public void LevelComplete()
     {
-        LevelCompleteText.gameObject.SetActive(true);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     void OnEnable()
