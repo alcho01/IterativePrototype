@@ -38,6 +38,15 @@ public class PlayerInteraction : MonoBehaviour
 
 
                 fridgeInteraction.Interact();
+             
+            }
+
+            if (collider.TryGetComponent(out DoorInteraction doorInteraction))
+            {
+
+
+                doorInteraction.Interact();
+
             }
 
             if (collider.TryGetComponent(out StoveInteraction stoveInteraction))
