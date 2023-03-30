@@ -260,6 +260,85 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "UI",
+            "id": "0be09d06-d670-4b16-9e86-e890d2e9b5c8",
+            "actions": [
+                {
+                    "name": "Point",
+                    "type": "PassThrough",
+                    "id": "7d95bf74-aaca-4d54-a20a-dfb4b96d09e3",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Click",
+                    "type": "PassThrough",
+                    "id": "6e15b028-f4b2-4488-8361-49207c3818e5",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "ScrollWheel",
+                    "type": "PassThrough",
+                    "id": "1acce190-4404-43cd-88d1-d3bad245d06d",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "070208fa-4899-49d2-b64a-439f3f13138c",
+                    "path": "<VirtualMouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad;PS4 Controller",
+                    "action": "Point",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8055cf63-4b75-45d8-9812-e17f109fcbaa",
+                    "path": "<VirtualMouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e2c17b4d-bcdb-4a78-a533-80cdc6b0c73b",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1409f11b-2e2a-48ee-badb-5c5c1dbab626",
+                    "path": "<VirtualMouse>/scroll",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "ScrollWheel",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [
@@ -285,16 +364,11 @@
             "devices": [
                 {
                     "devicePath": "<Gamepad>",
-                    "isOptional": true,
+                    "isOptional": false,
                     "isOR": false
                 },
                 {
-                    "devicePath": "<XInputController>",
-                    "isOptional": true,
-                    "isOR": false
-                },
-                {
-                    "devicePath": "<DualShockGamepad>",
+                    "devicePath": "<VirtualMouse>",
                     "isOptional": true,
                     "isOR": false
                 }
