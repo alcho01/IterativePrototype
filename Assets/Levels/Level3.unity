@@ -3686,8 +3686,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1926060449}
     - target: {fileID: 6542755924457659431, guid: 77c7ae73c9c0b4b96b8143069c788adf, type: 3}
+      propertyPath: m_Lens.FarClipPlane
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 6542755924457659431, guid: 77c7ae73c9c0b4b96b8143069c788adf, type: 3}
       propertyPath: m_Lens.NearClipPlane
-      value: 0.001
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 6542755924457659865, guid: 77c7ae73c9c0b4b96b8143069c788adf, type: 3}
       propertyPath: m_Name
@@ -6300,8 +6304,12 @@ PrefabInstance:
       value: MainCamera Variant
       objectReference: {fileID: 0}
     - target: {fileID: 3670048174701093927, guid: 6649ab00b4de84e50a981c423fef3a7f, type: 3}
+      propertyPath: far clip plane
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 3670048174701093927, guid: 6649ab00b4de84e50a981c423fef3a7f, type: 3}
       propertyPath: near clip plane
-      value: 0.001
+      value: -10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6649ab00b4de84e50a981c423fef3a7f, type: 3}

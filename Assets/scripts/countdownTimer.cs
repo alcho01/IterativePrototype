@@ -10,7 +10,7 @@ public class countdownTimer : MonoBehaviour
     PlayerControls controls;
 
     float currentTime = 0f;
-    float startingTime = 60f;
+    float startingTime = 70f;
 
     [SerializeField] Image InstructionsReset;
 
