@@ -6019,6 +6019,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1938019715421191461, guid: 0384a6b0ae74045a383c33297f559fb4, type: 3}
+      propertyPath: strength
+      value: 1.83
+      objectReference: {fileID: 0}
     - target: {fileID: 8504297966190319573, guid: 0384a6b0ae74045a383c33297f559fb4, type: 3}
       propertyPath: m_Name
       value: PlayerArmature
